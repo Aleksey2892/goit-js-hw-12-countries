@@ -1,37 +1,37 @@
 {{#each this}}
 
 
-<li class="country">
+<li class="single-country">
 
-  <h2 class="country-title">
+  <h2 class="single-country-title">
     {{name}}
   </h2>
 
-    <ul class="single-country">
+    <ul class="inner-single-country">
 
-<ul class="test">
-        <li class="country__about">
-        <span class="country__info">capital:</span> 
-        {{capital}}
+<ul class="single-country-list">
+        <li class="single-country-list__about">
+        <span class="single-country-list__info">Capital:</span> 
+        {{capital}};
         </li >  
-        <li class="country__about">
-          <span class="country__info">population:</span> 
-          {{population}}
+        <li class="single-country-list__about">
+          <span class="single-country-list__info">Population:</span> 
+          {{population}};
         </li>
   
-          <li class="country__about">
-              <span class="country__info">language:</span> 
+          <li class="single-country-list__about">
+              <span class="single-country-list__info">Languages:</span> 
               
-              <ul>
+              <ul class="single-country-list__lang">
             {{#each languages}}
-                <li>{{name}}</li>
+                <li>{{name}};</li>
             {{/each }}
               </ul>
           </li>
 </ul>
 
               <li>
-                <img class="country__img" src="{{flag}}" alt="flag">
+                <img class="single-country__img" src="{{flag}}" alt="flag">
                 </li>
 
     </ul>

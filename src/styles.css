@@ -20,76 +20,92 @@ body {
   background-image: url('./images/bg-pattern.png');
 }
 
+.search-box {
+  text-align: center;
+  margin-top: 40px;
+}
+#search-form {
+  text-align: center;
+  width: 300px;
+}
+/*
+========= COUNTRIES =========
+ */
 .countries-list {
+  margin: 40px auto 0;
+  width: 900px;
   list-style-type: none;
 }
 
-.inner-countrie-list {
+.country {
+  margin: 0 auto 20px;
+}
+
+.country:last-child {
+  margin-bottom: 0;
+}
+
+.inner-countries-list {
   display: flex;
-  align-items: center;
   list-style-type: none;
 }
 
 .country__img {
-  width: 50px;
-  height: auto;
-  margin-right: 10px;
+  margin-right: 20px;
+  width: 30px;
 }
 
 .country__about {
-  margin-right: 20px;
-  color: rgb(126, 153, 7);
-  text-decoration: royalblue;
-  text-transform: uppercase;
-  font-weight: 500;
+  margin-right: 10px;
+  font-weight: 600;
+  color: rgb(0, 124, 41);
 }
 
 .country__info {
-  font-style: italic;
-  color: rgb(6, 94, 110);
-  text-transform: none;
-  text-decoration: none;
   font-weight: 400;
+  font-style: italic;
+  color: black;
 }
 
-.single-country .country__img {
-  width: 320px;
-  order: 5;
-}
+/*
+========= SINGLE-COUNTRY =========
+ */
 
 .single-country {
+  display: block;
+  width: 650px;
+  margin: 0 auto;
+}
+
+.single-country-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.single-country__img {
+  width: 300px;
+}
+
+.inner-single-country {
   display: flex;
+  justify-content: space-between;
   list-style-type: none;
-  flex-direction: column;
 }
 
 .single-country-list {
-  display: flex;
-  list-style-type: none;
+  list-style: none;
 }
 
-.country__list {
-  display: flex;
-  flex-direction: column;
-  list-style-type: none;
-}
-
-.country__about:first-child {
-  margin-bottom: 40px;
-  font-size: 20px;
-
-  font-weight: 600;
-  width: 100%;
-}
-
-.country {
+.single-country-list__about {
   margin-bottom: 20px;
+  font-weight: 600;
+  color: rgb(0, 124, 41);
 }
 
-.single-country .country-title {
-  text-align: center;
+.single-country-list__info {
+  color: black;
 }
 
-/* .test {
-  display: flex;
-} */
+.single-country-list__lang {
+  margin-top: 20px;
+}
