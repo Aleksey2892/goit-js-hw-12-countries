@@ -1,0 +1,33 @@
+{{#each this}}
+
+
+<li class="country">
+    <ul class="inner-countrie-list">
+    <li><img class="country__img" src="{{flag}}" alt="flag"></li>
+      
+      <li class="country__about">
+        {{name}}
+      </li>
+      <li class="country__about">
+      <span class="country__info">capital:</span> 
+      {{capital}}
+      </li >  
+      {{!-- <li class="country__about">
+        <span class="country__info">population:</span> 
+        {{population}}
+      </li> --}}
+{{!-- 
+        <li class="country__about">
+
+            <span class="country__info">language:          {{#each languages}}</span> {{name}};
+          {{/each }}
+        </li> --}}
+
+    </ul>
+
+
+
+
+</li>
+
+{{/each}}
